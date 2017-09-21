@@ -5,13 +5,14 @@ mail:1352983234@qq.com
 github:lazyTai
 */
 import React, {Component} from 'react';
-import {Button, Grid, Icon} from 'semantic-ui-react'
 import {
     nav_select, nav_select_index, animationName,
     animationName_fade,
     animationName_translateX,
     animationName_bottom2top
 } from '../../myConst.js'
+import Icon from './icon'
+import "../../assets/app.css"
 
 class BooksList extends Component {
     constructor(props) {
@@ -57,29 +58,30 @@ class BooksList extends Component {
     columns(navIndex) {
         var me = this;
         var html = [];
-        html.push(<Grid.Column key={1} onClick={this.clickNav.bind(me, 1)}
-                         className={navIndex == 1 ? "active_select" : "active_select_no"}
-            >
-                <div style={styles.bottomTab}>
-                    <Icon name='home' size='big'/>
-                    <div>主页</div>
-                </div>
-            </Grid.Column>)
-            html.push(<Grid.Column key={2} onClick={this.clickNav.bind(me, 2)}
-                                   className={navIndex == 2 ? "active_select" : "active_select_no"}
+        html.push(<div key={1} onClick={this.clickNav.bind(me, 1)}
+                       className={navIndex == 1 ? "active_select" : "active_select_no"}
         >
-            <div style={styles.bottomTab}>
-                <Icon name='add' size='big'/>
+            <div>
+                <Icon name='home' fill={navIndex == 1 ? '#fff' : "#2222"} {...this.props}/>
+                <div>主页</div>
             </div>
-        </Grid.Column>)
-            html.push(<Grid.Column key={3} onClick={this.clickNav.bind(me, 3)}
-                                   className={navIndex == 3 ? "active_select" : "active_select_no"}
+        </div>)
+        html.push(<div key={2} onClick={this.clickNav.bind(me, 2)}
+                       className={navIndex == 2 ? "active_select" : "active_select_no"}
         >
-            <div style={styles.bottomTab}>
-                <Icon name='id badge' size='big'/>
+            <div>
+                <Icon name='add' fill={navIndex == 2 ? '#fff' : "#2222"} {...this.props}/>
+                <div>写作</div>
+            </div>
+        </div>)
+        html.push(<div key={3} onClick={this.clickNav.bind(me, 3)}
+                       className={navIndex == 3 ? "active_select" : "active_select_no"}
+        >
+            <div>
+                <Icon name="mine" fill={navIndex == 3 ? '#fff' : "#2222"} {...this.props}/>
                 <div>我的</div>
             </div>
-        </Grid.Column>)
+        </div>)
 
         return html
     }
@@ -87,25 +89,10 @@ class BooksList extends Component {
     render() {
         var me = this;
         var {state} = this.props;
-        return <div style={{position: 'relative'}}>
-            <Grid columns={3} style={styles.bottom} divided>
+        return <div className="src_page_App_js_bottom">
             {me.columns.call(this, state[nav_select_index])}
-        </Grid>
         </div>
     }
 }
 
-const styles = {
-    bottom: {
-        marginLeft: 0,
-        borderTop: '1px solid #eee',
-        position: "fixed",
-        bottom: 0,
-        width: '100%',
-        // maxWidth: '700px'
-    },
-    bottomTab: {
-        textAlign: 'center'
-    }
-}
 export default BooksList

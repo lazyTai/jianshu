@@ -6,6 +6,7 @@ import {withRouter} from 'react-router-dom'
 
 import {Button, Grid, Icon} from 'semantic-ui-react'
 import _ from 'lodash'
+import '../assets/app.css'
 import AppBottom from "./component/app.bottom.js"
 import {
     BrowserRouter as Router,
@@ -41,24 +42,12 @@ class App extends Component {
                 </CSSTransitionGroup>
 
 
-                <AppBottom {...this.props}/>
+                <AppBottom {...this.props} />
             </div>
         );
     }
 }
 
-const styles = {
-    bottom: {
-        marginLeft: 0,
-        borderTop: '1px solid #eee',
-        position: "fixed",
-        bottom: 0,
-        width: '100%'
-    },
-    bottomTab: {
-        textAlign: 'center'
-    }
-}
 const state2props = function (state) {
     return {state}
 }

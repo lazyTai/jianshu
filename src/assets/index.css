@@ -1,14 +1,17 @@
-html {
-    padding: 0;
-    margin: 0 auto;
-    height: 100%;
-    width: 100%;
+* {
+    box-sizing: border-box;
 }
 
-body, #root, .App, [data-reactroot] {
+html {
+    margin: 0;
     max-width: 700px;
-    height: 100%;
-    position: relative;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
 }
 
 .active_select {
@@ -76,4 +79,50 @@ body, #root, .App, [data-reactroot] {
 ._navItem.active {
     background: rgb(33, 133, 208) !important;
 
+}
+
+/*drawer*/
+:global(html) {
+    padding: 0;
+    margin: 0;
+}
+
+:global(body) {
+    padding: 0;
+    margin: 0;
+}
+
+:global(.drawer) {
+    transform: translateX(-100%);
+    position: absolute;
+    top: 0;
+    width: 30%;
+    background: #fff;
+    height: 100%;
+    z-index: 9;
+}
+
+:global(.backMark) {
+    transform: translateX(-100%);
+    background: #222;
+    position: absolute;
+    opacity: 0.5;
+    top: 0;
+    z-index: 8;
+    width: 100%;
+    height: 100%;
+}
+
+:global(.backMark.active) {
+    transform: translateX(0%);
+}
+
+:global(.drawer.active_in) {
+    transform: translateX(0%);
+    transition: all 300ms ease-in-out
+}
+
+:global(.drawer.active_out) {
+    transform: translateX(-100%);
+    transition: all 300ms ease-in-out
 }

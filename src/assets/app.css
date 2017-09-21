@@ -1,0 +1,20 @@
+.src_page_App_js_bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    background: #fff;
+}
+
+.active_select {
+    flex: 1;
+    text-align: center;
+    justify-items: center;
+}
+
+.active_select_no {
+    flex: 1;
+    text-align: center;
+    justify-items: center;
+}

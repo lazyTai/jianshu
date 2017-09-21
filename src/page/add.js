@@ -8,8 +8,6 @@ import React, {Component} from 'react';
 
 class mine extends Component {
     componentDidMount() {
-        // $(document).scrollTop() + $(window).height() > $(document).height() - 20
-        // this.refs['container'].style.height = window.innerHeight + "px"
     }
 
     render() {
