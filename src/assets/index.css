@@ -1,0 +1,79 @@
+html {
+    padding: 0;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+}
+
+body, #root, .App, [data-reactroot] {
+    max-width: 700px;
+    height: 100%;
+    position: relative;
+}
+
+.active_select {
+    background: orange;
+    color: aliceblue;
+}
+
+.fade-enter {
+    opacity: 0.1;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: all 300ms ease-out;
+
+}
+
+.translateX-enter {
+    transform: translateX(100%);
+}
+
+.translateX-enter.translateX-enter-active {
+    transform: translateX(0%);
+    transition: all 300ms ease-out;
+
+}
+
+.bottom2top-enter {
+    transform: translateY(100%);
+}
+
+.bottom2top-enter.bottom2top-enter-active {
+    transform: translateY(0%);
+    transition: all 300ms ease-out;
+}
+
+.toleft-enter {
+    transform: translateX(100%);
+}
+
+.toleft-enter.toleft-enter-active {
+    transform: translateX(0%);
+    transition: all 500ms ease-out;
+
+}
+
+.toright-enter {
+    transform: translateX(-100%);
+}
+
+.toright-enter.toright-enter-active {
+    transform: translateX(0%);
+    transition: all 500ms ease-out;
+
+}
+
+.fade-leave, .translateX-leave, .translateY-enter, .toRight-enter, .toLeft-enter {
+    opacity: 0;
+}
+
+._navItem {
+    transition: all 500ms ease-out;
+}
+
+._navItem.active {
+    background: rgb(33, 133, 208) !important;
+
+}
