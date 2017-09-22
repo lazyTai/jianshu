@@ -130,6 +130,11 @@
             <path>
               <item name="jianshu" type="b2602c69:ProjectViewProjectNode" />
               <item name="jianshu" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="scripts" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="jianshu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jianshu" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -211,7 +216,7 @@
       <workItem from="1506004161206" duration="731000" />
       <workItem from="1506006528999" duration="12729000" />
       <workItem from="1506044214395" duration="88000" />
-      <workItem from="1506044336672" duration="2580000" />
+      <workItem from="1506044336672" duration="2792000" />
     </task>
     <task id="LOCAL-00001" summary="hot">
       <created>1506022061114</created>
@@ -234,11 +239,18 @@
       <option name="project" value="LOCAL" />
       <updated>1506053225834</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="hot">
+      <created>1506053479045</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1506053479045</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51262000" />
+    <option name="totallyTimeSpent" value="51474000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
