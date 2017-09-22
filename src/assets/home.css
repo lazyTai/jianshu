@@ -1,5 +1,5 @@
 .src_page_component_app_content_js_wrapper {
-    padding: 10px;
+    box-sizing: border-box;
     margin-top: 10px;
     position: relative;
 }
@@ -12,9 +12,16 @@
     bottom: -10px;
     background: #eee;
 }
-
+.src_page_component_app_content_js_artitle{
+     width: 100%;
+     overflow: hidden;
+     padding: 10px;
+     box-sizing: border-box;
+}
 .src_page_component_app_content_js_content {
+
     width: 100%;
+
     overflow: hidden;
     height: 62px;
 }
@@ -29,4 +36,85 @@
 
 .src_page_home_content_wrapper {
     margin-bottom: 100px;
+}
+
+.src_page_home_js_typewrapper {
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 1px dashed #eee;
+    border-top: 1px dashed #eee;
+}
+
+.src_page_component_app_type_js_label {
+    padding: 10px;
+    border: 1px solid #eee;
+    background: rgba(238, 238, 238, 0.18);
+    margin-left: 10px;
+}
+/* header */
+.src_page_home_js_header {
+    position: fixed;
+    display: flex;
+    color: #fff;
+    background-color: #2185d0;
+    box-shadow: #1e6ead 0px 3px;
+    margin-bottom: 4px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 700px;
+    box-sizing: border-box;
+    z-index: 9;
+    line-height: 40px;
+}
+.src_page_home_js_header_left,.src_page_home_js_header_title,
+.src_page_home_js_header_right
+{
+    display: flex;
+    flex: 1;
+    /* text-align: center;
+    justify-content: center; */
+    align-items: center;
+}
+.src_page_home_js_header_left{
+    justify-content: start;
+    padding-left: 10px; 
+}
+.src_page_home_js_header_right{
+    justify-content: flex-end;
+    padding-right:  10px; 
+}
+
+.src_page_App_js_bottom {
+    position: fixed;
+    bottom: 0;
+    flex: 1;
+    display: flex;
+    background: #fff;
+    width: 100%;
+    z-index: 9;
+    border:1px solid #eee;
+}
+@media screen and  (min-width: 700px) {
+    .src_page_App_js_bottom {
+        width: 700px; /*这是重点，pc居中*/
+    }
+}
+
+.active_select {
+    padding-top: 5px;
+    width: 33.33%;
+    text-align: center;
+    justify-items: center;
+}
+
+.active_select_no {
+    padding-top: 5px;
+    width: 33.33%;
+    text-align: center;
+    justify-items: center;
+}
+
+.page_home,.page_add,.page_mine{
+    z-index: 8;
 }
